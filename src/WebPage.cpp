@@ -246,7 +246,7 @@ QStringList WebPage::getAttachedFileNames() {
 
 void WebPage::handleSslErrorsForReply(QNetworkReply *reply, const QList<QSslError> &errors) {
   if (m_manager->ignoreSslErrors())
-    reply->ignoreSslErrors(errors);
+    reply->ignoreSslErrors();
 }
 
 void WebPage::setSkipImageLoading(bool skip) {
